@@ -6,7 +6,7 @@ module.exports = {
   name: "Draft Release",
 
   on: {
-    push: "tags",
+    create: { tags: ["*"] },
   },
 
   jobs: {
