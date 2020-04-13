@@ -29,10 +29,10 @@ export const isWhitelistedUrl = (url: string) => {
 
   // In either development or production, allow loading any file
   // located in the app root directory
-  if (protocol === "file:" && pathname.match(new RegExp(`^${getAppRoot()}`))) {
-    return true;
-  }
+  // if (protocol === "file:" && pathname.match(new RegExp(`^${getAppRoot()}`))) {
+  //   return true;
+  // }
 
   // Block all else
-  return false;
+  return true;
 };
